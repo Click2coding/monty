@@ -116,8 +116,8 @@ int is_valid_int(char *str)
 		if (str[i] < '0' || str[i] > '9')
 		{
 			if (str[i] != '-' || i != 0)
-				return (0);
+				return (1);
 		}
 	}
 
-  	    return (1);
+  	    return (0);
